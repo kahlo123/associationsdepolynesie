@@ -1,47 +1,56 @@
 <?php
 
 class Association{
-    private $id_asso ;
-    private $nom_asso ; 
-    private $adresse ; 
-    private $bp ;
-    private $cp ;
-    private $num_tahiti;
-    private $type_asso ;
-    private $date_crea ;
-    private $statut ; 
+    private $id ;
+    private $name ;
+    private $address ;
+    private $pb ;
     private $pc ;
-    private $reg_int ;
+    private $num_tahiti;
+    private $asso_type ;
+    private $date_crea ;
+    private $file;
 
-    public function __construct($post){
-        $this->nom_asso = $post["nom_asso"];
-        $this->adresse = $post["adresse"];
-        $this->bp = $post["bp"];
-        $this->num_tahiti = $post["num_tahiti"];
-        $this->type_asso = $post["type_asso"];
-        $this->date_crea = $post["date_crea"];
-        $this->statut = $post["statut"];
+    public function __construct($post,$file){
+        $this->name = $post["name"];
+        $this->address = $post["address"];
+        $this->pb = $post["pb"];
         $this->pc = $post["pc"];
-        $this->reg_int = $post["reg_int"];
+        $this->num_tahiti = $post["num_tahiti"];
+        $this->asso_type = $post["asso_type"];
+        $this->date_crea = $post["date_crea"];
+        $this->file = $file;
     }
 
     public function insert(){
         global $wpdb ;
 
-        return $wpdb->insert(
+        $insert_resp = $wpdb->insert(
             $wpdb->prefix . 'info_asso',
             [
-                 "nom_asso" => $this->nom_asso, 
-                 "adresse" => $this->adresse, 
-                 "bp" => $this->bp,
-                 "cp" => $this->cp,
-                 "num_tahiti" => $this->num_tahiti,
-                 "type_asso" => $this->type_asso,
-                 "date_crea" => $this->date_crea,
-                 "statut" => $this->statut, 
+                 "name" => $this->name,
+                 "address" => $this->address,
+                 "pb" => $this->pb,
                  "pc" => $this->pc,
-                 "reg_int" => $this->reg_int,
+                 "num_tahiti" => $this->num_tahiti,
+                 "asso_type" => $this->asso_type,
+                 "date_crea" => $this->date_crea,
             ]
         );
+
+        if($insert_resp == true){
+            $code = 200 ;
+            $resp = "Vos informations ont bien été enregitré" ;
+            $folder = new Folder($this->name , $this->file);
+            $folder->save() ;
+
+        }
+        else
+        {
+            $code = 400 ;
+            $resp = "Vos informations n'ont pas pu être enregitré. Veuillez rééssayer ou contact l'administrateur" ;
+        }
+
+        return [$code , $resp] ;
     }
 }

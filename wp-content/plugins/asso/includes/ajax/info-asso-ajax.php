@@ -2,7 +2,7 @@
 function add_script()
 {
     wp_register_script('test-js123',
-        PLUGIN_URL . '/public/js/info-asso.js',
+        PLUGIN_URL . '/asso/public/js/info-asso.js',
         "jquery",
         "1.0");
 
