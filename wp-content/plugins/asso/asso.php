@@ -17,15 +17,18 @@ define("SAVE_DOC_PATH" , plugin_dir_path(__FILE__) . "/save/");
 //Model
 include __DIR__."/app/model/association.php";
 include __DIR__."/app/model/folder.php";
+include __DIR__."/app/model/office.php";
+include __DIR__."/app/model/office_member.php";
 
 //Controller
 
 
 //Ajax
 include __DIR__."/includes/ajax/info-asso-ajax.php";
+include __DIR__."/includes/ajax/office.php";
 //Routes
 include __DIR__."/includes/routes/info-asso.php";
-// Object PHP
+include __DIR__."/includes/routes/office.php";
 
 
 add_action('admin_menu','asso_admin_menu');
@@ -63,8 +66,8 @@ function set_table(){
                       `tel` varchar(20) NOT NULL,
                       `mail` varchar(20) NOT NULL,
                       `dateOfBirth` varchar(20) NOT NULL,
-                      `adresse` varchar(20) NOT NULL,
-                      `situation` enum('pr','v-pr','compt','secr') NOT NULL,
+                      `address` varchar(20) NOT NULL,
+                      `situation` enum('pr','v-pr','compt','secr','tr') NOT NULL,
                       PRIMARY KEY (`id`)
                     ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
 
@@ -117,14 +120,17 @@ function asso_admin_menu(){
 
 //View
 function info_asso_view(){
+    add_action( 'admin_enqueue_scripts', 'info_script' );
     include __DIR__."/app/view/info-asso.php";
 }
 
 function office_view(){
+    add_action( 'admin_enqueue_scripts', 'office_script' );
     include __DIR__."/app/view/office.php";
 }
 
 function add_office_view(){
+    add_action( 'admin_enqueue_scripts', 'office_script' );
     include __DIR__."/app/view/add_office.php";
 }
 

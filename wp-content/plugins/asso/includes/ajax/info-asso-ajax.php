@@ -1,19 +1,19 @@
 <?php
-function add_script()
+function info_script()
 {
-    wp_register_script('test-js123',
+    $handle = "info_asso" ;
+    wp_register_script($handle,
         PLUGIN_URL . '/asso/public/js/info-asso.js',
         "jquery",
         "1.0");
 
 
     wp_localize_script(
-        "test-js123",
+        $handle,
         'ajax_object',
         [
-            'ajax_route' => site_url('/wp-json/'.API_VERSION.'/asso/info/add')
+            'ajaxinfo' => site_url('/wp-json/'.API_VERSION.'/asso/info/add'),
         ]
     );
-    wp_enqueue_script('test-js123');
+    wp_enqueue_script($handle);
 }
-add_action( 'admin_enqueue_scripts', 'add_script' );

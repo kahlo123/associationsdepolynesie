@@ -25,7 +25,7 @@ class Association{
     public function insert(){
         global $wpdb ;
 
-        $insert_resp = $wpdb->insert(
+        $insert = $wpdb->insert(
             $wpdb->prefix . 'info_asso',
             [
                  "name" => $this->name,
@@ -38,7 +38,7 @@ class Association{
             ]
         );
 
-        if($insert_resp == true){
+        if($insert == true){
             $code = 200 ;
             $resp = "Vos informations ont bien été enregitré" ;
             $folder = new Folder($this->name , $this->file);
@@ -51,6 +51,6 @@ class Association{
             $resp = "Vos informations n'ont pas pu être enregitré. Veuillez rééssayer ou contact l'administrateur" ;
         }
 
-        return [$code , $resp] ;
+        return ["code" => $code , "content" => $resp] ;
     }
 }
