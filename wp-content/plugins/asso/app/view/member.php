@@ -2,5 +2,5 @@
     <div id="icon-options-general" class="icon32">
         <br>
     </div>
-    <h2>Membre</h2>
+    <h2>Ajout d'un membre</h2>
 </div>

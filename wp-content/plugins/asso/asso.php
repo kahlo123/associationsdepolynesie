@@ -80,6 +80,26 @@ function set_table(){
                       PRIMARY KEY (`id`)
                     ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
 
+    $tables .= "CREATE TABLE `{$wpdb->prefix}licensee` (
+                      `id` int(11) NOT NULL AUTO_INCREMENT,
+                      `lastname` varchar(20) NOT NULL,
+                      `firstname` varchar(50) NOT NULL,
+                      `tel` varchar(20) NOT NULL,
+                      `mail` varchar(20) NOT NULL,
+                      `dateOfBirth` varchar(20) NOT NULL,
+                      `address` varchar(20) NOT NULL,
+                      `sport` varchar(20) NOT NULL,
+                      PRIMARY KEY (`id`)
+                    ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
+
+    $tables .= "CREATE TABLE `{$wpdb->prefix}licensee_period` (
+                      `id` int(11) NOT NULL AUTO_INCREMENT,
+                      `licensee_id` int(11) NOT NULL,
+                      `date_start` date NOT NULL,
+                      `date_end` date NOT NULL,
+                      PRIMARY KEY (`id`)
+                    ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
+
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
     dbDelta($tables);
@@ -102,54 +122,91 @@ function unset_table() {
     $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}office" );
     $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}office_member" );
     $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}situation" );
+    $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}licensee" );
+    $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}licensee_period" );
 }
 
 
 function asso_admin_menu(){
-    add_menu_page('Les informations relatives à l\'association','Info association','manage_options','asso_plugin','info_asso_view','dashicons-admin-home');
-    add_submenu_page('asso_plugin','Bureau','Bureau','manage_options','office','add_office_view');
-    add_submenu_page('office','Ajouter un bureau','Ajouter un bureau','manage_options','add_office','add_office_view');
+   $list_info =  add_menu_page('Les informations relatives à l\'association','Info association','manage_options','list_info','info_asso_list_view','dashicons-admin-home');
+   add_submenu_page('list_info','Information','Informations','manage_options','list_info');
+   $add_info = add_submenu_page('list_info','Ajouter des informations','Ajouter','manage_options','add_info','info_asso_add_view');
 
-    add_submenu_page('asso_plugin','Comptabilité','Comptabilité','manage_options','accounting','accounting_view');
-    add_submenu_page('asso_plugin','Traitement des subventions','Subvention','manage_options','grant','grant_view');
-    add_submenu_page('asso_plugin','Traitement des documents','Documents','manage_options','document','document_view');
-    add_submenu_page('asso_plugin','Evènement','Evènement','manage_options','event','event_view');
-    add_submenu_page('asso_plugin','Liste des adhérents','Adhérent','manage_options','member','member_view');
+
+   $list_office =  add_menu_page('Bureau de l\'association','Bureau','manage_options','list_office','office_list_view','dashicons-admin-home');
+   add_submenu_page('list_office','Listes des bureaux','Tous les bureaux','manage_options','list_office');
+   $add_office = add_submenu_page('list_office','Ajouter un bureau','Ajouter','manage_options','office','office_add_view');
+
+
+    add_menu_page('Liste des licenciés' , 'Licencié','manage_options','list_licensee','licensee_list_view','dashicons-admin-home');
+    add_submenu_page('list_licensee','Liste des licenciés','Tous les bureaux','manage_options','list_licensee');
+    add_submenu_page('list_licensee','Ajouter un liencié','Ajouter','manage_options','add_licensee','licensee_add_view');
+
+
+//    add_submenu_page('office','Ajouter un bureau','Ajouter un bureau','manage_options','add_office','add_office_view');
+//
+//    add_submenu_page('asso_plugin','Comptabilité','Comptabilité','manage_options','accounting','accounting_view');
+//    add_submenu_page('asso_plugin','Traitement des subventions','Subvention','manage_options','grant','grant_view');
+//    add_submenu_page('asso_plugin','Traitement des documents','Documents','manage_options','document','document_view');
+//    add_submenu_page('asso_plugin','Evènement','Evènement','manage_options','event','event_view');
+//    add_submenu_page('asso_plugin','Liste des adhérents','Adherent','manage_options','member','member_view');
+//    add_submenu_page('asso_plugin','Liste des licenciés','Licencié','manage_options','licensee','licensee_view');
+
+
+    // Print script to menu page
+    add_action( 'admin_print_scripts-' . $list_info, 'info_script' );
+    add_action( 'admin_print_scripts-' . $add_info, 'info_script' );
+    add_action( 'admin_print_scripts-' . $list_office, 'office_script' );
+    add_action( 'admin_print_scripts-' . $add_office, 'office_script' );
 }
 
 
 //View
-function info_asso_view(){
-    add_action( 'admin_enqueue_scripts', 'info_script' );
-    include __DIR__."/app/view/info-asso.php";
+function info_asso_list_view(){
+    include __DIR__ . "/app/view/info_asso/list.php";
 }
 
-function office_view(){
-    add_action( 'admin_enqueue_scripts', 'office_script' );
-    include __DIR__."/app/view/office.php";
+function info_asso_add_view(){
+    include __DIR__ . "/app/view/info_asso/add.php";
 }
 
-function add_office_view(){
-    add_action( 'admin_enqueue_scripts', 'office_script' );
-    include __DIR__."/app/view/add_office.php";
+
+
+function office_list_view(){
+    include __DIR__."/app/view/office/list.php";
 }
 
-function accounting_view(){
-    include __DIR__."/app/view/accounting.php";
+function office_add_view(){
+    include __DIR__."/app/view/office/add.php";
 }
 
-function grant_view(){
-    include __DIR__."/app/view/grant.php";
+
+function licensee_list_view(){
+    include __DIR__."/app/view/licensee/list.php";
 }
 
-function document_view(){
-    include __DIR__."/app/view/document.php";
+function licensee_add_view(){
+    include __DIR__."/app/view/licensee/add.php";
 }
 
-function event_view(){
-    include __DIR__."/app/view/event.php";
-}
 
-function member_view(){
-    include __DIR__."/app/view/member.php";
-}
+//function accounting_view(){
+//    include __DIR__."/app/view/accounting.php";
+//}
+//
+//function grant_view(){
+//    include __DIR__."/app/view/grant.php";
+//}
+//
+//function document_view(){
+//    include __DIR__."/app/view/document.php";
+//}
+//
+//function event_view(){
+//    include __DIR__."/app/view/event.php";
+//}
+//
+//function member_view(){
+//    include __DIR__."/app/view/member.php";
+//}
+//

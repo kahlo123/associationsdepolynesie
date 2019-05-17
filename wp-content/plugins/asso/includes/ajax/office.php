@@ -17,4 +17,3 @@ function office_script()
     );
     wp_enqueue_script($handle);
 }
-add_action( 'admin_enqueue_scripts', 'office_script' );

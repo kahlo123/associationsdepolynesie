@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="017a07bc-b35b-4c2a-b13a-d36509f3adb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/model/office.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/model/office_member.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/office.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/info-asso.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/office.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/asso.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/asso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/public/js/info-asso.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/public/js/info-asso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/public/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/public/js/office.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/asso.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+            <state relative-caret-position="261">
+              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
               <folding>
                 <element signature="e#6#228#0#PHP" expanded="true" />
               </folding>
@@ -36,73 +35,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/model/office.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/public/js/office.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/office.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="324">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -146,6 +91,8 @@
       <find>membre</find>
       <find>'</find>
       <find>1</find>
+      <find>office_script</find>
+      <find>asso_admin_menu</find>
     </findStrings>
     <replaceStrings>
       <replace>asso</replace>
@@ -164,7 +111,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="info_asso" />
+        <entry key="$PROJECT_DIR$" value="office" />
       </map>
     </option>
   </component>
@@ -180,19 +127,22 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/grant.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/document.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/event.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/accounting.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/model/office_member.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/public/js/info-asso.js" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/asso/asso.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/office.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/model/office.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/asso/public/js/office.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/list.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/add.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/asso/asso.php" />
       </list>
     </option>
   </component>
@@ -207,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,7 +197,27 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="asso" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="associationsdepolynesie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="associationsdepolynesie" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="asso" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="licensee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="associationsdepolynesie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="associationsdepolynesie" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="asso" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="office" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="associationsdepolynesie" type="b2602c69:ProjectViewProjectNode" />
@@ -282,12 +251,22 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="asso" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="associationsdepolynesie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="associationsdepolynesie" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="asso" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,6 +276,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Kyle\Nouveau dossier\web\associationsdepolynesie\wp-content\plugins\asso\app\view\licensee" />
+      <recent name="E:\Kyle\Nouveau dossier\web\associationsdepolynesie\wp-content\plugins\asso\app\view\office" />
+      <recent name="E:\Kyle\Nouveau dossier\web\associationsdepolynesie\wp-content\plugins\asso\app\view\info_asso" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,6 +318,11 @@
       <workItem from="1557726520572" duration="1476000" />
       <workItem from="1557782309193" duration="12752000" />
       <workItem from="1557875228666" duration="7952000" />
+      <workItem from="1558046546621" duration="2076000" />
+      <workItem from="1558048693877" duration="3000" />
+      <workItem from="1558048771999" duration="2347000" />
+      <workItem from="1558051187967" duration="2136000" />
+      <workItem from="1558053506729" duration="2100000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout info asso - ok &#10;Ajout bureau - en cours">
       <created>1557542417071</created>
@@ -340,11 +331,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557542417071</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout bureau - ok &#10;Ajout membre du bureau - ok">
+      <created>1558046751457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558046751457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44374000" />
+    <option name="totallyTimeSpent" value="53036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +357,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29127517" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31208053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="File Transfer" order="0" weight="0.3286119" />
@@ -390,7 +388,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Ajout info asso - ok &#10;Ajout bureau - en cours" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout info asso - ok &#10;Ajout bureau - en cours" />
+    <MESSAGE value="Ajout bureau - ok &#10;Ajout membre du bureau - ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout bureau - ok &#10;Ajout membre du bureau - ok" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/basic.php">
@@ -434,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -462,20 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/office.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/info-asso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/info-asso.php" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -507,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/public/js/info-asso.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-admin/includes/deprecated.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -528,51 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/add_office.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/asso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-          <folding>
-            <element signature="e#6#228#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -582,22 +509,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/model/office.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        <state relative-caret-position="884">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/office.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/info-asso.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/model/association.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/public/js/office.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="284">
           <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/add_office.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/licensee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/office.php" />
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/routes/office.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/office.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/includes/ajax/info-asso-ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/public/js/info-asso.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/info_asso/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/office/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/app/view/licensee/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/asso/asso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+          <folding>
+            <element signature="e#6#228#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
