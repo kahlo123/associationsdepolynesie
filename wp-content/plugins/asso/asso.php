@@ -21,26 +21,50 @@ define("PLUGIN_URL" , plugin_dir_url(__FILE__));
 include __DIR__."/includes/ajax/info-asso-ajax.php";
 //Routes
 include __DIR__."/includes/routes/info-asso.php";
-
+//Controller
+include __DIR__ . "/app/controller/InfoController.php";
+include __DIR__ . "/app/controller/OfficeController.php";
+include __DIR__ . "/app/controller/SubController.php";
+include __DIR__ . "/app/controller/ComptaController.php";
+include __DIR__ . "/app/controller/DocumentController.php";
+include __DIR__ . "/app/controller/EventController.php";
+include __DIR__ . "/app/controller/AdherentController.php";
 
 add_action('admin_menu','asso_admin_menu');
 
 function asso_admin_menu(){
-    add_menu_page('Les informations relatives à l\'association','Info association','manage_options','asso_plugin','info_asso_view','dashicons-admin-home');
-    add_submenu_page('asso_plugin','Bureau','Bureau','manage_options','office','office_view');
-    add_submenu_page('asso_plugin','Comptabilité','Comptabilité','manage_options','accounting','accounting_view');
-    add_submenu_page('asso_plugin','Traitement des subventions','Subvention','manage_options','grant','grant_view');
-    add_submenu_page('asso_plugin','Traitement des documents','Documents','manage_options','document','document_view');
-    add_submenu_page('asso_plugin','Evènement','Evènement','manage_options','event','event_view');
-    add_submenu_page('asso_plugin','Liste des adhérents','Adhérent','manage_options','member','member_view');
+    $info = new InfoController();
+    $sub = new SubController() ;
+    $office = new OfficeController();
+    $compta = new ComptaController();
+    $event = new EventController();
+    $doc = new DocumentController();
+    $adherent = new AdherentController();
+
+//    add_menu_page('La comptabilité de l\'association','Comptabilité','manage_options','compta','info_asso_view','dashicons-chart-pie');
+//    add_menu_page('Les évènements de l\'association','Evènements','manage_options','event','info_asso_view','dashicons-calendar-alt');
+//    add_menu_page('Liste des documents','Documents','manage_options','doc','info_asso_view','dashicons-portfolio');
+//    add_menu_page('Liste des adhérents','Adhérents','Liste des adhérents','Adhérent','manage_options','adherent','info_asso_view','dashicons-id-alt');
+//
+//    ///
+//    ///
+//    ///
+//    add_submenu_page('compta','Toutes les informations','Informations comptable','manage_options','compta');
+//    add_submenu_page('compta','Ajouter','Ajouter','manage_options','compta_add','accounting_view');
+//    ///
+//    add_submenu_page('event','Toutes les informations','Liste des évènements','manage_options','event');
+//    add_submenu_page('event','Ajouter','Ajouter','manage_options','event_add','accounting_view');
+//    ///
+//    add_submenu_page('doc','Toutes les informations','Liste des documents','manage_options','doc');
+//    add_submenu_page('doc','Ajouter','Ajouter','manage_options','doc_add','accounting_view');
+//    //
+//    add_management_page('Some page title', 'Title in the menu', 'install_plugins', 'info_asso12', 'accounting_view', '');
 }
 
 
 //View
 function info_asso_view(){
-    include __DIR__."/app/view/info-asso.php";
-//$exist = $wpdb->get_col("DESC {$wpdb->prefix}info_asso", 0);
-//print_r($exist);
+    include __DIR__."/app/view/info.php";
 }
 
 function office_view(){
@@ -53,6 +77,7 @@ function accounting_view(){
 
 function grant_view(){
     include __DIR__."/app/view/grant.php";
+
 }
 
 function document_view(){
